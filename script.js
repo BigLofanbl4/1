@@ -12,5 +12,8 @@ function Calculator() {
         let op = split[1];
         let b = +split[2];
 
+        if (!this.methods[op] || isNaN(a) || isNaN(b)) {
+            return NaN;
+        }
     }
 }
