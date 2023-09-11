@@ -18,4 +18,8 @@ function Calculator() {
 
         return this.methods[op](a, b);
     }
+
+    this.addMethod = function(name, func) {
+        this.methods[name] = func;
+    }
 }
