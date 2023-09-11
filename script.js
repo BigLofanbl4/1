@@ -5,4 +5,12 @@ function Calculator() {
         "-": (a, b) => a - b,
         "+": (a, b) => a + b,
     };
+
+    this.calculate = function(str) {
+        let split = str.split("");
+        let a = +split[0];
+        let op = split[1];
+        let b = +split[2];
+
+    }
 }
